@@ -21,3 +21,10 @@
     background: linear-gradient(180deg, rgba(29,28,28,1) 0%, rgba(25,24,24,1) 35%, rgba(0,0,0,1) 100%);
     padding-top: 20px;
 }
+.smcaps{
+    font-variant: small-caps;
+    font-weight: 600;
+}
+.ftbig{
+    font-size: larger;
+}
