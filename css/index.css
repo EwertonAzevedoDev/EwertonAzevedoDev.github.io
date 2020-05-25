@@ -2,9 +2,7 @@
     min-height: 3px;
 }
 
-.header-1{
-    min-height: 780px; 
-}
+
 
 .header-1 a{
     text-decoration: none;
@@ -27,4 +25,12 @@
 }
 .ftbig{
     font-size: larger;
+}
+.legend{
+    font-variant: small-caps;
+    font-weight: 400;
+    font-size: 14px;
+}
+.social-icons{
+    margin-left: 10px;
 }
