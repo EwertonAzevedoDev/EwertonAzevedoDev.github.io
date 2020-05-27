@@ -35,6 +35,15 @@
     margin-left: 10px;
 }
 
+.jobtitle{
+    font-weight: 600;
+}
+
+.font-formacao{
+    font-size: 14px;
+}
+
+/* Animacoes das barras de habilidades */
 .animation-php-bar{
     width:90%;
     animation-name: phpbar;
