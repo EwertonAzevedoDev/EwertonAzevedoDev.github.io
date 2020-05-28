@@ -43,6 +43,35 @@
     font-size: 14px;
 }
 
+.fotoperfil{
+    animation: descefoto 0.7s 1 0s ease-in;
+}
+
+@keyframes descefoto{
+    0%{
+        transform: translateY(-25%);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(xx) translateY(0%);
+        opacity: 1;
+        }
+}
+
+.fadein{
+    animation: textfadein 0.7s 1 0s ease-in-out;
+}
+
+@keyframes textfadein{
+    0%{
+        opacity: 0;
+        }
+    99%{
+        transform: rotate(xx);
+        opacity: 1;
+        }
+}
+
 /* Animacoes das barras de habilidades */
 .animation-php-bar{
     width:90%;
