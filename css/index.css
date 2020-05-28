@@ -10,7 +10,8 @@
 }
 
 .profile-img{
-    height: 285px; width: 275px;
+    height: 265px; width: 250px;
+    margin-top:10px;
 }
 
 .bio{
@@ -40,9 +41,24 @@
 }
 
 .font-formacao{
-    font-size: 14px;
+    font-size: 12px;
 }
 
+.cards-show{
+    min-height: 460px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 3px 11px -5px rgba(0,0,0,0.67);
+    -moz-box-shadow: 2px 3px 11px -5px rgba(0,0,0,0.67);
+    box-shadow: 2px 3px 11px -5px rgba(0,0,0,0.67);
+}
+
+.bg-custom{
+    background-color: #fff;
+}
 .fotoperfil{
     animation: descefoto 0.7s 1 0s ease-in;
 }
