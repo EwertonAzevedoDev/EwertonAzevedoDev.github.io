@@ -30,7 +30,7 @@
 .legend{
     font-variant: small-caps;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
 }
 .social-icons{
     margin-left: 10px;
@@ -41,7 +41,7 @@
 }
 
 .font-formacao{
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .cards-show{
@@ -55,6 +55,8 @@
     -moz-box-shadow: 2px 3px 11px -5px rgba(0,0,0,0.67);
     box-shadow: 2px 3px 11px -5px rgba(0,0,0,0.67);
 }
+
+
 
 .bg-custom{
     background-color: #fff;
