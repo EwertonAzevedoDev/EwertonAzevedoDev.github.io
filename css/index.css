@@ -1,8 +1,12 @@
+h2{
+    margin-bottom: 20px;
+}
+dt{
+    text-decoration: underline;
+}
 .topline{
     min-height: 3px;
 }
-
-
 
 .header-1 a{
     text-decoration: none;
