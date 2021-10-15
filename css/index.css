@@ -118,7 +118,7 @@ dt{
     animation-duration: 3s;    
 }
 .animation-javascript-bar{
-    width:50%;
+    width:70%;
     animation-name: javascriptbar;
     animation-duration: 2s;    
 }
@@ -130,6 +130,16 @@ dt{
 .animation-linux-bar{
     width:45%;
     animation-name: linuxbar;
+    animation-duration: 2s;    
+}
+.animation-python-bar{
+    width:80%;
+    animation-name: pythonbar;
+    animation-duration: 2s;    
+}
+.animation-ahk-bar{
+    width:85%;
+    animation-name: ahkbar;
     animation-duration: 2s;    
 }
 
@@ -155,7 +165,7 @@ dt{
 
 @keyframes javascriptbar{
     0% {width:0%;}    
-    100% {width:50%;}
+    100% {width:70%;}
 }
 
 @keyframes mysqlbar{
@@ -166,4 +176,14 @@ dt{
 @keyframes linuxbar{
     0% {width:0%;}    
     100% {width:45%;}
+}
+
+@keyframes pythonbar{
+    0% {width:0%;}    
+    100% {width:80%;}
+}
+
+@keyframes ahkbar{
+    0% {width:0%;}    
+    100% {width:85%;}
 }
