@@ -1,8 +1,17 @@
+body{
+    font-size: 14px;    
+}
+
+::selection {
+color: #FFF;
+background: #333;
+}
+
 h2{
     margin-bottom: 20px;
 }
 dt{
-    text-decoration: underline;
+    
 }
 .topline{
     min-height: 3px;
@@ -14,7 +23,7 @@ dt{
 }
 
 .profile-img{
-    height: 265px; width: 250px;
+    height: 275px; width: 250px;
     margin-top:10px;
 }
 
@@ -51,11 +60,12 @@ a:hover{
 }
 
 .jobtitle{
-    font-weight: 600;
+    font-weight: 700;       
 }
 
-.font-formacao{
-    font-size: 13px;
+.jobdescription{
+    padding-left: 5%;
+    margin-top: 10px;
 }
 
 .cards-show{

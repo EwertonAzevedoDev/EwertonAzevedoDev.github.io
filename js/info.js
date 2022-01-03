@@ -3,19 +3,38 @@ let experiencias = [
         "empresa": "BPA Technologies",
         "cargo": "Desenvolvedor RPA",
         "periodo": "(09/2020 - 09/2021)",
-        "descricao":"Desenvolvi automações que acessavam planilhas, sites, programas de terceiros e fazia o dashboards dessas automações para acompanhamento do desempenho da automação, ensinei colegas iniciantes como utilizar algumas ferramentas da empresa e auxiliei no desenvolvimento de várias automações."
+        "descricao":["Desenvolvi automações, utilizando Python, Auto Hotkey, Nodered e javascript, que capturavam e processavam dados de qualquer tipo de fonte Ex.: planilha, API, software legado, site, etc.",
+                     "Desenhei dashboards dinânmicos utilizando o Grafana e MySQL para acompanhar o desempenho das automações desenvolvidas.",
+                     "Configurei ambientes para a utilização das automações desenvolvidas.",
+                     "Participei da migração de ambientes virtuais migrando mais de 150 automações.",
+                     "Participei de reuniões com os clientes.",
+                     "Corrigi automações defeituosas desenvolvidas por desenvolvedores antigos da empresa",
+                     "Ensinei os colegas novatos a utilizar o framework da empresa tais como outras ferramentas e auxiliei no desenvolvimento de suas primeiras automações"
+                    ]
     },
     {
         "empresa": "Yellow Lamp",
         "cargo": "Desenvolvedor back-end",
         "periodo": "(08/2019 - 03/2020)",
-        "descricao":"Participei de alguns projetos já em andamento, tais como, sistema de entrega, sistema de loja virtual e sistemas mais avançados utilizando API de terceiros. Participei do desenvolvimento de um projeto grande de pesquisa e avaliação de restaurantes onde fiquei responsável integralmente pelo back-end desenvolvido em PHP utilizando o framework Laravel. E desenvolvi uma página web com painel administrativo para inserção de conteúdo dinâmico."
+        "descricao":["Participei do desenvolvimento de um sistema web de buscas de restaurantes utilizando, PHP, Laravel, Angular e MongoDb.", 
+                     "Participei do desenvolvimento de uma Api para integrar um sistema web feito em Wordpress com os dados dos clientes, utilizando Laravel, PHP e Angular.",
+                     "Participei do desenvolvimento de um sistema web de Bazar de roupas que integrava varias unidades das lojas com o estoque, utilizando Angular e MongoDB",
+                     "Participei do desenvolvimento de um sistema web de contratação de serviçoes que conectava o cliente ao prestador de serviço, utilizando Angular e Firebase",
+                     "Participei do desenvolvimento de um sistema web de segurança com acesso as cameras e apis da central, utilizando Angular e MongoDB",
+                     "Desenvolvi um sistema web com painel de controle para edição de conteudo da página utilizando, Laravel, PHP e MySQL",
+                     "Participei de reuniões com os clientes para levantamento de requisito, homologação e entrega do projeto."
+                    ]
     },
     {
         "empresa": "SVMA",
         "cargo": "Estagiário de T.I",
         "periodo": "(04/2019 - 08/2019)",
-        "descricao":"Durante o período estagiado utilizei o Linux para a configuração de um ambiente Web. Tive contato com o método Scrum e a plataforma Trello para organização de projetos, realizei estudos dos frameworks Drupal e Wordpress e implementei o sistema GLPI no servidor de testes para homologação do mesmo."
+        "descricao":["Realizei diversas pesquisas sobre ferramentas e frameworks disponíveis para execução de um projeto interno",
+                    "Participei do projeto de implementar uma intranet com sistema de abertura de chamados, utilizando GLPI",
+                    "Configurei o ambiente de desenvolvimento e homologação em Linux",
+                    "Participei de pesquisas internas para levantamento de requisitos para novos projetos internos",
+                    "Participei de reuniões diárias utilizando o método ágil SCRUM"
+                ]
     }     
 ]
 console.table(experiencias)
@@ -25,11 +44,16 @@ experiencias.forEach((element) =>{
     let dt = document.createElement("dt")
     let span = document.createElement("span")
     let dd = document.createElement("dd")
-    let jobtitle = document.createTextNode(element.empresa + " - " + element.cargo + " " + element.periodo)
-    let jobDescription = document.createTextNode(element.descricao)
+    let jobtitle = document.createTextNode(element.empresa + " - " + element.cargo + " " + element.periodo)    
     span.classList.add("jobtitle")    
     span.appendChild(jobtitle)
-    dd.appendChild(jobDescription)
+    element.descricao.forEach((e) => {
+        let li = document.createElement("li")
+        li.classList.add("jobdescription")
+        let liText = document.createTextNode(e)
+        li.appendChild(liText)
+        dd.appendChild(li)
+    })    
     dt.appendChild(span)
     jobs.appendChild(dt)
     jobs.appendChild(dd)
