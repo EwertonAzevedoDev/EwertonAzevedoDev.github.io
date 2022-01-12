@@ -1,3 +1,4 @@
+console.log(window.innerWidth)
 let experiencias = [
     {
         "empresa": "BPA Technologies",
