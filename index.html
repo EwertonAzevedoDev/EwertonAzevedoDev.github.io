@@ -1,9 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:locale" content="pt-br">
+    <meta property="og:url" content="https://ewertonazevedodev.github.io/">
+    <meta property="og:title" content="Portfólio de Ewerton Azevedo.">
+    <meta property="og:site_name" content="Ewerton Azevedo">    
+    <meta property="og:description" content="O portfólio de Ewerton Azevedo.">
+    <meta property="og:image" content="https://ewertonazevedodev.github.io/images/Eu.png">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="800"> 
+    <meta property="og:image:height" content="600">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
@@ -14,40 +23,29 @@
 
 <body class="bg-custom">
     <!--Linha Cinza Topo-->
-    <div class="container-fluid bg-dark topline">
-    </div>
+    <header class="container-fluid bg-dark topline">
+    </header>
 
     <!--Cabeçalho-->
     <div class="container" align="center">
-        <div class="row mt-4">
+        <main class="row mt-4">
             <!--Meio (Perfil)-->
-            <div class="col-md-4 order-md-2 mb-4 mx-auto">
-                <div class="flip-card col-md-12 bg-light cards-show">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="./images/Eu.png" class="img-fluid rounded-circle mb-4 profile-img fotoperfil"
-                                alt="Ewerton Devel">
-                            <div class="fadein">
-                                <h1>Ewerton Azevedo</h1>
-                                <h4>Desenvolvedor Pleno.</h4>                                
-                            </div>
-                        </div>
-                        <div class="flip-card-back">
-                            <img src="./images/Eu.png" class="img-fluid rounded-circle mb-4 profile-img fotoperfil"
-                                alt="Ewerton Devel">
-                            <div class="fadein">
-                                <h1>Ewerton Azevedo</h1>
-                                <h4>Desenvolvedor Pleno.</h4>                     
-                            </div>
-
-                        </div>
+            <section class="col-md-4 order-md-2 mb-4 mx-auto">
+                <article class="col-md-12 bg-light cards-show">
+                    <figure>
+                        <img src="./images/Eu.png" class="img-fluid rounded-circle mb-4 profile-img fotoperfil" alt="Ewerton Devel">
+                    </figure>
+                    
+                    <div class="fadein">
+                        <h1>Ewerton Azevedo</h1>
+                        <h4>Desenvolvedor Pleno.</h4>                                
                     </div>
-                </div>
-            </div>
+                </article>
+            </section>
 
             <!--Esquerda (Skills)-->
-            <div class="col-md-4 order-md-1 mb-4 mx-auto font-formacao" align="left">
-                <div class="col-md-12 bg-light cards-show">
+            <aside class="col-md-4 order-md-1 mb-4 mx-auto font-formacao" align="left">
+                <article class="col-md-12 bg-light cards-show">
                     <div class="row my-1 ">
                         <div class="col-md-12 smcaps mt-5" align="center">
                             <h4>Habilidades</h4>
@@ -139,13 +137,11 @@
                             </div>
                         </div>
                     </div>
-
-                </div>
-
-            </div>
+                </article>
+            </aside>
             <!--Direita (?????)-->
-            <div class="col-md-4 order-md-3 mx-auto">
-                <div class="col-md-12 bg-light cards-show">
+            <aside class="col-md-4 order-md-3 mx-auto">
+                <article class="col-md-12 bg-light cards-show">
                     <div class="row">
                         <div class="col-md-12 mt-5" align="center">
                             <h4 class="smcaps">Formação</h4>
@@ -175,113 +171,143 @@
                             </dl>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
+                </article>
+            </aside>
+        </main>
+        <section class="row">
+            
             <!--Experiencias-->
             <div class="col-md-12">
                 <div class="col-md-12 bg-light cards-show">
-                    <h2 class="smcaps"><i class="fas fa-address-card"></i> Experiências</h2>
+                    <header>
+                        <h2 class="smcaps"><i class="fas fa-address-card"></i> Experiências</h2>
+                    </header>                    
                     <dl id="jobs" align="left">
                         <!--Preenchido por javascripit-->
                     </dl>
                 </div>
             </div>
+        </section>
+        <section class="row">
             <!--Portifolio-->
             <div class="col-md-12 mt-4 portfolio">
                 <div class="col-md-12 bg-light cards-show">
-                    <h2 class="smcaps"><i class="fas fa-address-card"></i> Portfólio</h2>
-
+                    <header>
+                        <h2 class="smcaps"><i class="fas fa-address-card"></i> Portfólio</h2>
+                    </header> 
                     <div class="row">
-
-                        <div class="col-md-6">
+                        <article class="col-md-6">
                             <div class="card mb-3" style="max-width: 100%; min-height: 250px; border:none;">
-                                <img class="card-img-top" src="./images/projetos/camila.png" alt=""/>
+                                <figure>
+                                    <img class="card-img-top" src="./images/projetos/camila.png" alt=""/>
+                                </figure>                                
                                 <div class="card-body">
-                                    <h5 class="card-title">Camila Inácio</h5>
-                                    <p class="card-text">Este projeto foi desenvolvido em parceria com a <a href="https://bueroxyz.com/" target="_blank">Büro XYZ</a> que cria layouts conceituais
-                                        e consiste em um portfólio de uma arquiteta onde ela necessitava de um painel que possibilitasse a inserção de seus projetos.</p>
-                                    <p class="card-text">As tecnologias utilizadas foram: HTML, PHP, JAVASCRIPT, CSS e o framework Kirby</p>
-                                    <p><a href="https://camilainacio.com/" class="btn btn-dark" target="_blank">Ver
-                                            online</a></p>
+                                    <header>
+                                        <h5 class="card-title">Camila Inácio</h5>
+                                    </header>
+                                    <main>
+                                        <p class="card-text">Este projeto foi desenvolvido em parceria com a <a href="https://bueroxyz.com/" target="_blank">Büro XYZ</a> que cria layouts conceituais
+                                            e consiste em um portfólio de uma arquiteta onde ela necessitava de um painel que possibilitasse a inserção de seus projetos.</p>
+                                        <p class="card-text">As tecnologias utilizadas foram: HTML, PHP, JAVASCRIPT, CSS e o framework Kirby</p>
+                                        <p><a href="https://camilainacio.com/" class="btn btn-dark" target="_blank">Ver online</a></p>
+                                    </main>                                    
                                 </div>
                             </div>
-                        </div>  
+                        </article>  
 
-                        <div class="col-md-6">
+                        <article class="col-md-6">
                             <div class="card mb-3" style="max-width: 100%; min-height: 250px; border:none;">
-                                <img class="card-img-top" src="./images/projetos/vtripper.png" alt=""/>
+                                <figure>
+                                    <img class="card-img-top" src="./images/projetos/vtripper.png" alt=""/>
+                                </figure>                                
                                 <div class="card-body">
-                                    <h5 class="card-title">Vtripper</h5>
-                                    <p class="card-text">Este projeto foi desenvolvido enquanto eu trabalhava na <a href="https://yellowlamp.com.br/" target="_blank">Yellow Lamp</a> e é um
-                                         Portal de turismo com conteúdo inserido dinâmicamente através
-                                        de um painel administrativo.</p>
-                                    <p class="card-text">As tecnologias utilizadas foram: HTML, PHP, JAVASCRIPT, CSS e o framework Laravel</p>
-                                    <p><a href="https://vtripper.com.br/" class="btn btn-dark" target="_blank">Ver
-                                            online</a></p>
+                                    <header>
+                                        <h5 class="card-title">Vtripper</h5>
+                                    </header>
+                                    <main>
+                                        <p class="card-text">
+                                            Este projeto foi desenvolvido enquanto eu trabalhava na <a href="https://yellowlamp.com.br/" target="_blank">Yellow Lamp</a> e é um
+                                            Portal de turismo com conteúdo inserido dinâmicamente através
+                                            de um painel administrativo.</p>
+                                        <p class="card-text">As tecnologias utilizadas foram: HTML, PHP, JAVASCRIPT, CSS e o framework Laravel</p>
+                                        <p><a href="https://vtripper.com.br/" class="btn btn-dark" target="_blank">Ver online</a></p>
+                                    </main> 
                                 </div>
                             </div>
-                        </div>
-
+                        </article>
                     </div>
 
                     <div class="row">
 
-                        <div class="col-md-6">
+                        <article class="col-md-6">
                             <div class="card mb-3" style="max-width: 100%; min-height: 250px; border:none;">
-                                <img class="card-img-top" src="./images/projetos/norestaurante.png" alt=""/>
+                                <figure>
+                                    <img class="card-img-top" src="./images/projetos/norestaurante.png" alt=""/>
+                                </figure>                               
                                 <div class="card-body">
-                                    <h5 class="card-title">No Restaurante</h5>
-                                    <p class="card-text">Este projeto foi desenvolvido enquanto eu trabalhava na <a href="https://yellowlamp.com.br/" target="_blank">Yellow Lamp</a> e é um
-                                        Um guia de bares e restaurantes que permite avaliações dos
-                                        clientes e feed dos restaurantes.</p>
-                                    <p class="card-text">As tecnologias utilizadas foram: HTML, PHP, JAVASCRIPT, CSS e o framework Laravel</p>
-                                    <p><a href="https://norestaurante.com.br/" class="btn btn-dark" target="_blank">Ver
-                                            online</a></p>
+                                    <header>
+                                        <h5 class="card-title">No Restaurante</h5>
+                                    </header> 
+                                    <main>
+                                        <p class="card-text">
+                                            Este projeto foi desenvolvido enquanto eu trabalhava na <a href="https://yellowlamp.com.br/" target="_blank">Yellow Lamp</a> e é um
+                                            Um guia de bares e restaurantes que permite avaliações dos
+                                            clientes e feed dos restaurantes.</p>
+                                        <p class="card-text">As tecnologias utilizadas foram: HTML, PHP, JAVASCRIPT, CSS e o framework Laravel</p>
+                                        <p><a href="https://norestaurante.com.br/" class="btn btn-dark" target="_blank">Ver online</a></p>
+                                    </main>  
                                 </div>
                             </div>
-                        </div>                                             
+                        </article>                                             
                     
-                        <div class="col-md-6">
+                        <article class="col-md-6">
                             <div class="card mb-3" style="max-width: 100%; min-height: 250px; border:none;">
-                                <img class="card-img-top" src="./images/projetos/lolteamsorter.png" alt=""/>
+                                <figure>
+                                    <img class="card-img-top" src="./images/projetos/lolteamsorter.png" alt=""/>
+                                </figure>                                
                                 <div class="card-body">
-                                    <h5 class="card-title">LolTeamSorter</h5>
-                                    <p class="card-text">Este é um projeto pessoal que possibilita sortear membros para formação de equipes
-                                        de league of legends.</p>
-                                    <p class="card-text">As tecnologias utilizadas foram: HTML, JAVASCRIPT, CSS</p>
-                                    <p><a href="https://lolteamsorter.vercel.app/" class="btn btn-dark" target="_blank">Ver
-                                            online</a></p>
+                                    <header>
+                                        <h5 class="card-title">LolTeamSorter</h5>
+                                    </header>     
+                                    <main>
+                                        <p class="card-text">
+                                            Este é um projeto pessoal que possibilita sortear membros para formação de equipes
+                                            de league of legends.</p>
+                                        <p class="card-text">As tecnologias utilizadas foram: HTML, JAVASCRIPT, CSS</p>
+                                        <p><a href="https://lolteamsorter.vercel.app/" class="btn btn-dark" target="_blank">Ver online</a></p>
+                                    </main>
                                 </div>
                             </div>
-                        </div>
+                        </article>
 
                     </div>
                     <div class="row">
-                        <div class="col-md-6">
+                        <article class="col-md-6">
                             <div class="card mb-3" style="max-width: 100%; min-height: 250px; border:none;">
-                                <img class="card-img-top" src="./images/projetos/dolarhoje.png" alt=""/>
+                                <figure>
+                                    <img class="card-img-top" src="./images/projetos/dolarhoje.png" alt=""/>
+                                </figure>
                                 <div class="card-body">
-                                    <h5 class="card-title">Cotação Dollar</h5>
-                                    <p class="card-text">Este é um projeto pessoal que possibilita verificar a cotação do USD, EUR, ARS e BTC
-                                        através de acesso a api e converter para BRL.</p>
-                                    <p class="card-text">As tecnologias utilizadas foram: HTML, JAVASCRIPT, CSS</p>
-                                    <p><a href="https://ewertonz.github.io/cotacaododollar.github.io/"
-                                        class="btn btn-dark" target="_blank">Ver online</a></p>
+                                    <header>
+                                        <h5 class="card-title">Cotação Dollar</h5>
+                                    </header>
+                                   <main>
+                                        <p class="card-text">Este é um projeto pessoal que possibilita verificar a cotação do USD, EUR, ARS e BTC
+                                            através de acesso a api e converter para BRL.</p>
+                                        <p class="card-text">As tecnologias utilizadas foram: HTML, JAVASCRIPT, CSS</p>
+                                        <p><a href="https://ewertonz.github.io/cotacaododollar.github.io/" class="btn btn-dark" target="_blank">Ver online</a></p>
+                                   </main>                                    
                                 </div>
                             </div>
-                        </div>
+                        </article>
                     </div>
-
                 </div>
             </div>
-        </div>
-
+        </section>
     </div>
 
-    <!--Conteúdo-->
-    <div class="container-fluid mt-4 bio" id="bio">
+
+    <footer class="container-fluid mt-4 bio" id="bio">
         <div class="container">
             <a href="https://github.com/EwertonAzevedoDev" target="_blank">
                 <i class="fab fa-github fa-3x social-icons"></i>
@@ -290,7 +316,7 @@
                 <i class="fab fa-linkedin fa-3x social-icons"></i>
             </a>
         </div>        
-    </div>
+    </footer>
 
     <script src="./js/info.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
