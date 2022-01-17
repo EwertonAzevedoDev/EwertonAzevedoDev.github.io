@@ -60,4 +60,26 @@ experiencias.forEach((element) =>{
     jobs.appendChild(dd)
 })
 
+function activateDakMode(){
+    let checkbox = document.getElementById("darkmodecheckbox");
+    if(checkbox.checked){
+        document.getElementsByTagName("html")[0].classList.add('dark-mode');
+        localStorage.setItem('darkmode', true); 
+    }else{
+        document.getElementsByTagName("html")[0].classList.remove('dark-mode');
+        localStorage.setItem('darkmode', false);
+    }    
+}
+
+function loadPageStyle(){
+    var pageMode = localStorage.getItem("darkmode");
+    let checkbox = document.getElementById("darkmodecheckbox");
+    console.log("page mode is dark: " + pageMode);
+    if(pageMode == "true"){
+        console.log("changing to darkmode");
+        document.getElementsByTagName("html")[0].classList.add('dark-mode');
+        checkbox.checked = true;
+    }
+}
+
 

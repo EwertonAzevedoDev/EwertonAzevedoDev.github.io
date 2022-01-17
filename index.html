@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" >
 
 <head>
     <meta charset="UTF-8">
@@ -16,18 +16,22 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>    
     <script src="https://kit.fontawesome.com/32efb47850.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
     <title>Ewerton Azevedo</title>
 </head>
 
-<body class="bg-custom">
+<body class="bg-custom" onload="loadPageStyle()">
     <!--Linha Cinza Topo-->
     <header class="container-fluid bg-dark topline">
     </header>
-
+    <div class="container mt-4" align="right">
+        <b>Modo escuro: </b><input type="checkbox" id="darkmodecheckbox" onchange="activateDakMode()">
+    </div>
     <!--Cabeçalho-->
     <div class="container" align="center">
+        
         <main class="row mt-4">
             <!--Meio (Perfil)-->
             <section class="col-md-4 order-md-2 mb-4 mx-auto">
@@ -40,6 +44,7 @@
                         <h1>Ewerton Azevedo</h1>
                         <h4>Desenvolvedor Pleno.</h4>                                
                     </div>
+                    
                 </article>
             </section>
 
@@ -194,9 +199,22 @@
                 <div class="col-md-12 bg-light cards-show">
                     <header>
                         <h2 class="smcaps"><i class="fas fa-address-card"></i> Portfólio</h2>
-                    </header> 
-                    <div class="row">
-                        <article class="col-md-6">
+                    </header>
+                    <div class="row mt-4 mb-4">
+                        <nav class="button-group filters-button-group">
+                            <ul>
+                                <li class="is-checked" data-filter="todos">Todos</li>
+                                <li data-filter="html"><i class="devicon-html5-plain"></i></li>
+                                <li data-filter="css"><i class="devicon-css3-plain"></i></li>
+                                <li data-filter="javascript"><i class="devicon-javascript-plain"></i></li>
+                                <li data-filter="php"><i class="devicon-php-plain"></i></li>
+                                <li data-filter="kirby">Kirby</li>
+                                <li data-filter="laravel"><i class="devicon-laravel-plain"></i></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="row grid">
+                        <article class="col-md-4 element-item html php javascript css kirby">
                             <div class="card mb-3" style="max-width: 100%; min-height: 250px; border:none;">
                                 <figure>
                                     <img class="card-img-top" src="./images/projetos/camila.png" alt=""/>
@@ -215,7 +233,7 @@
                             </div>
                         </article>  
 
-                        <article class="col-md-6">
+                        <article class="col-md-4 element-item html php javascript css laravel">
                             <div class="card mb-3" style="max-width: 100%; min-height: 250px; border:none;">
                                 <figure>
                                     <img class="card-img-top" src="./images/projetos/vtripper.png" alt=""/>
@@ -235,11 +253,8 @@
                                 </div>
                             </div>
                         </article>
-                    </div>
 
-                    <div class="row">
-
-                        <article class="col-md-6">
+                        <article class="col-md-4 element-item html php javascript css laravel">
                             <div class="card mb-3" style="max-width: 100%; min-height: 250px; border:none;">
                                 <figure>
                                     <img class="card-img-top" src="./images/projetos/norestaurante.png" alt=""/>
@@ -258,9 +273,9 @@
                                     </main>  
                                 </div>
                             </div>
-                        </article>                                             
-                    
-                        <article class="col-md-6">
+                        </article>
+                        
+                        <article class="col-md-4 element-item html javascript css">
                             <div class="card mb-3" style="max-width: 100%; min-height: 250px; border:none;">
                                 <figure>
                                     <img class="card-img-top" src="./images/projetos/lolteamsorter.png" alt=""/>
@@ -280,9 +295,7 @@
                             </div>
                         </article>
 
-                    </div>
-                    <div class="row">
-                        <article class="col-md-6">
+                        <article class="col-md-4 element-item html javascript css">
                             <div class="card mb-3" style="max-width: 100%; min-height: 250px; border:none;">
                                 <figure>
                                     <img class="card-img-top" src="./images/projetos/dolarhoje.png" alt=""/>
@@ -300,7 +313,8 @@
                                 </div>
                             </div>
                         </article>
-                    </div>
+
+                    </div>                                      
                 </div>
             </div>
         </section>
@@ -318,6 +332,8 @@
         </div>        
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/isotopepack.js" defer></script>
     <script src="./js/info.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -328,6 +344,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <script src="./js/filter.js"></script>
 </body>
 
 </html>
