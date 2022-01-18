@@ -203,13 +203,13 @@
                     <div class="row mt-4 mb-4">
                         <nav class="button-group filters-button-group">
                             <ul>
-                                <li class="is-checked" data-filter="todos">Todos</li>
-                                <li data-filter="html"><i class="devicon-html5-plain"></i></li>
-                                <li data-filter="css"><i class="devicon-css3-plain"></i></li>
-                                <li data-filter="javascript"><i class="devicon-javascript-plain"></i></li>
-                                <li data-filter="php"><i class="devicon-php-plain"></i></li>
-                                <li data-filter="kirby">Kirby</li>
-                                <li data-filter="laravel"><i class="devicon-laravel-plain"></i></li>
+                                <li class="switch is-checked" data-filter="*">Todos</li>
+                                <li class="switch" data-filter=".html"><i class="devicon-html5-plain"></i></li>
+                                <li class="switch" data-filter=".css"><i class="devicon-css3-plain"></i></li>
+                                <li class="switch" data-filter=".javascript"><i class="devicon-javascript-plain"></i></li>
+                                <li class="switch" data-filter=".php"><i class="devicon-php-plain"></i></li>
+                                <li class="switch" data-filter=".kirby">Kirby</li>
+                                <li class="switch" data-filter=".laravel"><i class="devicon-laravel-plain"></i></li>
                             </ul>
                         </nav>
                     </div>
@@ -332,8 +332,9 @@
         </div>        
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./js/isotopepack.js" defer></script>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="./js/filter.js"></script>
     <script src="./js/info.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -344,7 +345,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-    <script src="./js/filter.js"></script>
+    
 </body>
 
 </html>
