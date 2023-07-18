@@ -1,6 +1,17 @@
 console.log(window.innerWidth)
 let experiencias = [
     {
+        "empresa": "Quality Digital",
+        "cargo": "Desenvolvedor RPA Pleno",
+        "periodo": "(04/2022 - 04/2023)",
+        "descricao":["Desenvolvi automações, utilizando o software Automation Edge, Python, AutoIt, Powershell e javascript, para empresas bancárias e de telecomunicações.",
+                     "Desenvolvi tutoriais dentro do ambiente Confluence da empresa.",
+                     "Participei de reuniões com os clientes.",
+                     "Corrigi automações defeituosas desenvolvidas por desenvolvedores antigos da empresa",
+                     "Ensinei os colegas novatos a utilizar o framework da empresa tais como outras ferramentas e auxiliei no desenvolvimento de suas primeiras automações"
+                    ]
+    },
+    {
         "empresa": "BPA Technologies",
         "cargo": "Desenvolvedor RPA",
         "periodo": "(09/2020 - 09/2021)",
